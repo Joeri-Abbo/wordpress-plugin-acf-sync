@@ -1,6 +1,6 @@
 {
   "name": "joeri-abbo/acf-sync",
-  "type": "wordpress-muplugin",
+  "type": "library",
   "description": "A plugin that adds a wp cli command for syncs of acf fields",
   "keywords": ["wordpress", "acf"],
   "authors": [
@@ -10,5 +10,13 @@
       "homepage": "https://www.linkedin.com/in/joeri-abbo-43a457144/",
       "role":     "Developer"
     }
-  ]
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
 }
